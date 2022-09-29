@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD API REST AXIOS</title>
+</head>
+<body>
+    <header>
+        <h1>CRUD API REST AXIOS</h1>
+    </header>
+    <main>
+        <section class="crud">
+            <article class="arti-one">
+                <h2 class="crud-title">Agregar datos</h2>
+                <form class="crud-form">
+                    <input type="text" name="name"  placeholder="Nombre" required>
+                    <br>
+                    <input type="text" name="statement"  placeholder="statement" required>
+                    <br>
+                    <input type="text" name="result"  placeholder="resultado" required>
+                    <br>
+                    <input type="submit" value="send">
+                    <input type="hidden" name="id">
+                </form>
+            </article>
+            <article class="arti">
+                <h2 class="view">table</h2>
+                <table class="crud-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>statement</th>
+                            <th>result</th>
+                            <br>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </article>
+        </section>
+        <template id="crud-template">
+            <tr>
+                <td class="name"></td>
+                <td class="statement"></td>
+                <td class="result"></td>
+                <br>
+                <td>
+                    <button class="edit">Editar</button>
+                    <button class="delete">Eliminar</button>
+                </td>
+            </tr>
+        </template>
+    </main>
+    <br><br>
+    <footer>
+    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" ></script>
+    <script src="./js/api_rest/axios.js"></script>
+   
+</body>
+</html>
